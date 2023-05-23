@@ -10,6 +10,7 @@ class Actor:
         self._sprite = sprite
         self.on_start()
 
+
     def get_position(self):
         return self._position
 
@@ -36,3 +37,6 @@ class Actor:
 
     def on_destroy(self):
         pass
+
+    def move(self, delta):
+        self._position += delta

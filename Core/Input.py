@@ -1,4 +1,5 @@
 import pygame
+
 from pygame.math import Vector2
 from pygame.locals import *
 from events import Events
@@ -19,23 +20,23 @@ class Input:
     @staticmethod
     def update():
         for event in pygame.event.get():
-            if event.type == KEYDOWN:
-                if event.key == K_LEFT:
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
                     Input._movement_axis.x = -1
-                elif event.key == K_RIGHT:
+                elif event.key == pygame.K_RIGHT:
                     Input._movement_axis.x = 1
-                elif event.key == K_UP:
-                    Input._movement_axis.y = 1
-                elif event.key == K_DOWN:
+                elif event.key == pygame.K_UP:
                     Input._movement_axis.y = -1
-                elif event.key == K_SPACE:
+                elif event.key == pygame.K_DOWN:
+                    Input._movement_axis.y = 1
+                elif event.key == pygame.K_SPACE:
                     Input._events.on_fire()
             elif event.type == KEYUP:
-                if event.key == K_LEFT & Input._movement_axis.x == -1:
+                if event.key == K_LEFT and Input._movement_axis.x == -1:
                     Input._movement_axis.x = 0
-                elif event.key == K_RIGHT & Input._movement_axis.x == 1:
+                elif event.key == K_RIGHT and Input._movement_axis.x == 1:
                     Input._movement_axis.x = 0
-                elif event.key == K_UP & Input._movement_axis.y == 1:
+                elif event.key == K_UP and Input._movement_axis.y == -1:
                     Input._movement_axis.y = 0
-                elif event.key == K_DOWN & Input._movement_axis.y == -1:
+                elif event.key == K_DOWN and Input._movement_axis.y == 1:
                     Input._movement_axis.y = 0

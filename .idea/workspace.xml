@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/SpriteAnimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/the-binding-of-isaac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-binding-of-isaac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/SpriteAnimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/SpriteAnimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +39,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacho/Desktop/the-binding-of-isaac&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">

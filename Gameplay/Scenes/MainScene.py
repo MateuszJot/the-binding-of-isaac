@@ -7,5 +7,5 @@ class MainScene:
     @staticmethod
     def get_scene():
         scene = Scene()
-        scene.add_actor(PlayerActor(Vector2(5, 5), 0, Vector2(1, 1)))
+        scene.add_actor(PlayerActor(Vector2(5, 5), 0, Vector2(2, 2)))
         return scene

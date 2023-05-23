@@ -12,10 +12,6 @@ running = True
 clock = pygame.time.Clock()
 
 while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-
     scene.render(screen)
     Input.update()
     scene.update(clock.tick(Settings.FPS))
