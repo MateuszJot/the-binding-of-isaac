@@ -1,4 +1,4 @@
-from ActorRenderer import ActorRenderer
+from Core.Actors.ActorRenderer import ActorRenderer
 
 
 class Actor:

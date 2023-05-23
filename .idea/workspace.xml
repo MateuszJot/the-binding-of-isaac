@@ -1,102 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d214b01e-a8ce-49ed-8d9c-f495214d1008" name="Default Changelist" comment="" />
+    <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActorRenderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SceneCamera.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/SceneCamera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/tree.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2Q3ArUAsGclVpjwruQapnhTPbuP" />
+  <component name="ProjectId" id="2QC9TpopkwPOlugPjcqLCHk6eGE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\core\actors" />
+      <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\core" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="untitled2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\STUDENT\Desktop\untitled2\Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Main" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d214b01e-a8ce-49ed-8d9c-f495214d1008" name="Default Changelist" comment="" />
-      <created>1684572089666</created>
+      <changelist id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="" />
+      <created>1684846706259</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684572089666</updated>
+      <updated>1684846706259</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1684572336520">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1684572336520" />
-    <state x="707" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1684576006964">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="707" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1684576006964" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1684576380533">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1684576380533" />
-    <state width="1899" height="403" key="GridCell.Tab.0.bottom" timestamp="1684576690034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="403" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1684576690034" />
-    <state width="1899" height="403" key="GridCell.Tab.0.center" timestamp="1684576690034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="403" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1684576690034" />
-    <state width="1899" height="403" key="GridCell.Tab.0.left" timestamp="1684576690034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="403" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1684576690034" />
-    <state width="1899" height="403" key="GridCell.Tab.0.right" timestamp="1684576690034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="403" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1684576690034" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1684572229907">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1684572229907" />
   </component>
 </project>

@@ -1,7 +1,6 @@
-import Settings
 import pygame
-from Debug import Debug
-from SceneCamera import SceneCamera
+from .. import Settings
+from ..SceneCamera import SceneCamera
 
 
 class ActorRenderer:
