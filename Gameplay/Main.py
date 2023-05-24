@@ -6,6 +6,7 @@ from Gameplay.Scenes.MainScene import MainScene
 
 
 pygame.init()
+pygame.display.set_caption("The Binding Of Isaac - Mateusz Jachowicz")
 screen = pygame.display.set_mode((Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT))
 scene = MainScene.get_scene()
 running = True

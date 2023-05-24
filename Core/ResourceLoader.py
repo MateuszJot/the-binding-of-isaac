@@ -19,3 +19,9 @@ class ResourceLoader:
 
         Debug.log(f"Loaded {len(sprites)} from: {local_path}")
         return sprites
+
+    @staticmethod
+    def load_sprite_from_path(local_path):
+        directory = f"{os.getcwd()}/../{ResourceLoader.RESOURCES_DIRECTORY_PATH}{local_path}"
+        Debug.log(f"Loaded sprite from: {local_path}")
+        return pygame.image.load(directory)

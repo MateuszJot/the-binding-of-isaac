@@ -14,6 +14,9 @@ class Actor:
     def get_position(self):
         return self._position
 
+    def set_position(self, position):
+        self._position = position
+
     def get_rotation(self):
         return self._rotation
 
@@ -32,7 +35,7 @@ class Actor:
     def on_start(self):
         pass
 
-    def on_update(self, delta_time):
+    def on_update(self, delta_time, scene):
         pass
 
     def on_destroy(self):

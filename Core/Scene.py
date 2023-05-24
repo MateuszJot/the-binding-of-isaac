@@ -1,17 +1,27 @@
+import pygame
+import Core.Settings as Settings
+from Core.ResourceLoader import ResourceLoader
+
+
 class Scene:
-    def __init__(self):
+    def __init__(self, background_image_path):
         self._actors = []
         self._time = 0
+        self._background = pygame.transform.scale(ResourceLoader.load_sprite_from_path(background_image_path), (Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT))
 
     def add_actor(self, actor):
         if actor not in self._actors:
             self._actors.append(actor)
 
+    def add_actor_at_index(self, actor, index):
+        if actor not in self._actors:
+            self._actors.insert(index, actor)
+
     def render(self, window):
-        window.fill((0, 0, 0))
+        window.blit(self._background, (0, 0))
         for actor in self._actors:
             actor.render(window)
 
     def update(self, delta_time):
         for actor in self._actors:
-            actor.on_update(delta_time)
+            actor.on_update(delta_time, self)
