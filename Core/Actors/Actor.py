@@ -2,14 +2,14 @@ from Core.Actors.ActorRenderer import ActorRenderer
 
 
 class Actor:
-    def __init__(self, position, rotation, scale, sprite):
+    def __init__(self, position, rotation, scale, sprite, y_render_order=False):
         self._position = position
         self._rotation = rotation
         self._scale = scale
         self._renderer = ActorRenderer(self)
         self._sprite = sprite
+        self._y_render_order = y_render_order
         self.on_start()
-
 
     def get_position(self):
         return self._position
@@ -25,6 +25,9 @@ class Actor:
 
     def get_renderer(self):
         return self._renderer
+
+    def get_y_render_order(self):
+        return self._y_render_order
 
     def get_sprite(self):
         return self._sprite

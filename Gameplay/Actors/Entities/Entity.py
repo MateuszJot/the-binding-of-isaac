@@ -17,7 +17,7 @@ class Entity(Actor):
         self._shadow = None
         self._special_animation = None
 
-        super().__init__(position, rotation, scale, None)
+        super().__init__(position, rotation, scale, None, True)
 
     def on_update(self, delta_time, scene):
         if self._shadow is None:

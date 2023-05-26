@@ -8,7 +8,6 @@ from Gameplay.Actors.Entities.Entity import Entity
 class PlayerEntity(Entity):
     ANIMATION_SPEED = 2
     WALK_SPEED = 0.005
-    SHADOW_OFFSET = Vector2(0, 0.8)
 
     def __init__(self, position, rotation, scale):
         super().__init__(position, rotation, scale)
@@ -25,4 +24,3 @@ class PlayerEntity(Entity):
         self.move(self._move_direction * delta_time * PlayerEntity.WALK_SPEED)
         self.set_position(self.clamp_position(self._position))
         super().on_update(delta_time, scene)
-        

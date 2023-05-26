@@ -5,12 +5,226 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackLeft/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/AttackRight/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/Idle/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkLeft/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Ghost/Animations/WalkRight/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/Idle/0_Citizen_Idle_029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkDown/0_Citizen_Walk_029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkLeft/0_Citizen_Walk_029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkRight/0_Citizen_Walk_029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Player/Animations/WalkUp/0_Citizen_Walk_029.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +257,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Gameplay\Actors\Entities" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Scenes" />
-      <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\Gameplay" />
-      <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\Gameplay\Scenes" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackRight" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackLeft" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\Idle" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\WalkRight" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\WalkLeft" />
     </key>
   </component>
   <component name="RunManager">

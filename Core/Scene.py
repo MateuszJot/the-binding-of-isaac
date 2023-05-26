@@ -1,4 +1,5 @@
 import pygame
+import pygame.math
 import Core.Settings as Settings
 from Core.ResourceLoader import ResourceLoader
 
@@ -19,8 +20,16 @@ class Scene:
 
     def render(self, window):
         window.blit(self._background, (0, 0))
+        actors_with_y_render_order = [x for x in self._actors if x.get_y_render_order()]
+        actors_with_y_render_order = sorted(actors_with_y_render_order, key=lambda x: x.get_position().y)
+        actors_with_y_render_order_index = 0
+
         for actor in self._actors:
-            actor.render(window)
+            if actor.get_y_render_order():
+                actors_with_y_render_order[actors_with_y_render_order_index].render(window)
+                actors_with_y_render_order_index += 1
+            else:
+                actor.render(window)
 
     def update(self, delta_time):
         for actor in self._actors:

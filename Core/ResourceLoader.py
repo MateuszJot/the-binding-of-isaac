@@ -12,7 +12,9 @@ class ResourceLoader:
         directory = f"{os.getcwd()}/../{ResourceLoader.RESOURCES_DIRECTORY_PATH}{local_path}"
         sprites = []
 
-        for filename in os.listdir(directory):
+        all_png_files = [file for file in os.listdir(directory) if file.lower().endswith(".png")]
+
+        for filename in sorted(all_png_files, key=lambda x: int(x.replace(".png", ""))):
             file_full_name = os.path.join(directory, filename)
             name, extension = os.path.splitext(filename)
             if os.path.isfile(file_full_name) and extension == ".png":
