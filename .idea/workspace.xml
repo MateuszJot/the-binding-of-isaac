@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/Misc/shadow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Scenes/map1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/Scenes/map2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Player/PlayerActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/tree.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +43,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Gameplay\Actors\Entities" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Scenes" />
       <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\Gameplay" />
       <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\Gameplay\Scenes" />
-      <recent name="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\core\actors" />
     </key>
   </component>
   <component name="RunManager">

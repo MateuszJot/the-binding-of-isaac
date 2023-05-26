@@ -6,6 +6,7 @@ from Core.Debug import Debug
 
 class ResourceLoader:
     RESOURCES_DIRECTORY_PATH = "Resources/"
+
     @staticmethod
     def load_sprites_from_folder(local_path):
         directory = f"{os.getcwd()}/../{ResourceLoader.RESOURCES_DIRECTORY_PATH}{local_path}"

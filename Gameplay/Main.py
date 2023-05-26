@@ -1,6 +1,5 @@
 import pygame
 import Core.Settings as Settings
-
 from Core.Input import Input
 from Gameplay.Scenes.MainScene import MainScene
 
