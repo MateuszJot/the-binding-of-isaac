@@ -37,6 +37,9 @@ class Entity(Actor):
         if self._special_animation is not None:
             return self._special_animation.get_next_sprite()
 
+        if self._move_direction.x == 0 and self._move_direction.y == 0:
+            return self._idle_animation.get_next_sprite()
+
         if self._move_direction.x > 0:
             return self._walk_right_animation.get_next_sprite()
         elif self._move_direction.x < 0:
@@ -45,8 +48,6 @@ class Entity(Actor):
             return self._walk_up_animation.get_next_sprite()
         elif self._move_direction.y > 0:
             return self._walk_down_animation.get_next_sprite()
-        else:
-            return self._idle_animation.get_next_sprite()
 
     @staticmethod
     def clamp_position(position):
