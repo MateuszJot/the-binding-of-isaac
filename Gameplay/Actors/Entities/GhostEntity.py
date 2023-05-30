@@ -1,5 +1,5 @@
 import random
-import pygame.math
+from Gameplay.Actors.ParticleActor import ParticleActor
 from pygame.math import Vector2
 from Core.SpriteAnimation import SpriteAnimation
 from Core.ResourceLoader import ResourceLoader
@@ -8,7 +8,8 @@ from Gameplay.Actors.Entities.Entity import Entity
 
 class GhostEntity(Entity):
     MOVEMENT_SPEED = 0.005
-    ANIMATION_SPEED = 4
+    WALK_ANIMATION_SPEED = 4
+    DEATH_PARTICLE_TIME = 300
     WALK_SPEED = 0.005
     MIN_DISTANCE_TO_CHANGE_TARGET = 0.1
 
@@ -24,9 +25,9 @@ class GhostEntity(Entity):
         super().__init__(position, rotation, scale)
 
     def initialize_movement_animations(self):
-        self._idle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/Idle"), GhostEntity.ANIMATION_SPEED)
-        self._walk_left_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/WalkLeft"), GhostEntity.ANIMATION_SPEED)
-        self._walk_right_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/WalkRight"), GhostEntity.ANIMATION_SPEED)
+        self._idle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/Idle"), GhostEntity.WALK_ANIMATION_SPEED)
+        self._walk_left_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/WalkLeft"), GhostEntity.WALK_ANIMATION_SPEED)
+        self._walk_right_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/WalkRight"), GhostEntity.WALK_ANIMATION_SPEED)
         self._walk_up_animation = self._walk_left_animation
         self._walk_down_animation = self._walk_left_animation
 
@@ -53,3 +54,6 @@ class GhostEntity(Entity):
             self._desired_position = None
 
         return normalized_direction
+    def create_death_particle(self, scene):
+        particle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/Particles/1"), 2)
+        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), scene, particle_animation, GhostEntity.DEATH_PARTICLE_TIME))

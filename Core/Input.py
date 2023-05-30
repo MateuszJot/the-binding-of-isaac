@@ -7,7 +7,7 @@ from events import Events
 
 class Input:
     _movement_axis = Vector2(0, 0)
-    _events = Events('on_fire')
+    events = Events('on_fire')
 
     @staticmethod
     def get_movement_axis():
@@ -15,7 +15,7 @@ class Input:
 
     @staticmethod
     def get_on_fire_event():
-        return Input._events.on_fire
+        return Input.events.on_fire
 
     @staticmethod
     def update():
@@ -30,7 +30,7 @@ class Input:
                 elif event.key == pygame.K_DOWN:
                     Input._movement_axis.y = 1
                 elif event.key == pygame.K_SPACE:
-                    Input._events.on_fire()
+                    Input.events.on_fire()
             elif event.type == KEYUP:
                 if event.key == K_LEFT and Input._movement_axis.x == -1:
                     Input._movement_axis.x = 0

@@ -11,4 +11,11 @@ class MainScene:
         player = PlayerEntity(Vector2(5, 5), 0, Vector2(2, 2))
         scene.add_actor(player)
         scene.add_actor(GhostEntity(Vector2(7, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(6, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(4, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(7, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(7, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(6, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(4, 5), 0, Vector2(2, 2), player))
+        scene.add_actor(GhostEntity(Vector2(7, 5), 0, Vector2(2, 2), player))
         return scene

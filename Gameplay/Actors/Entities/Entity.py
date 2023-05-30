@@ -11,15 +11,17 @@ class Entity(Actor):
     POSITION_MAX_Y = 7.24
     SHADOW_OFFSET = Vector2(0, 0.8)
 
-    def __init__(self, position, rotation, scale):
+    def __init__(self, position, rotation, scale, collision_layer=0):
         self.initialize_movement_animations()
         self._move_direction = Vector2(0, 0)
         self._shadow = None
         self._special_animation = None
+        self._collision_layer = collision_layer
 
-        super().__init__(position, rotation, scale, None, True)
+        super().__init__(position, rotation, scale, None, True, collision_layer)
 
     def on_update(self, delta_time, scene):
+        self._scene = scene
         if self._shadow is None:
             self.create_shadow(scene)
 
@@ -63,6 +65,18 @@ class Entity(Actor):
 
         return position
 
+    def on_collision(self, actor):
+        if actor.get_collision_layer() != self._collision_layer:
+            return
+
+        self.create_death_particle(self._scene)
+        self._scene.destroy_actor(self._shadow)
+        self._scene.destroy_actor(actor)
+        self._scene.destroy_actor(self)
+
     def create_shadow(self, scene):
         self._shadow = Actor(Vector2(5, 5), 0, Vector2(2, 2), ResourceLoader.load_sprite_from_path("Misc/shadow.png"))
         scene.add_actor_at_index(self._shadow, 0)
+
+    def create_death_particle(self, scene):
+        pass

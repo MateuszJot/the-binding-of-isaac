@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/ParticleActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/ProjectileActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/BlueProjectile/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/BlueProjectile/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/BlueProjectile/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/1/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/YellowProjectile/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/YellowProjectile/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/YellowProjectile/3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +63,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\1" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\BlueProjectile" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\YellowProjectile" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackRight" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackLeft" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\Idle" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\WalkRight" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\WalkLeft" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,5 +108,16 @@
       <updated>1684846706259</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
