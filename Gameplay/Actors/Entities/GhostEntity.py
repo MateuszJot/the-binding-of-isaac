@@ -4,11 +4,15 @@ from pygame.math import Vector2
 from Core.SpriteAnimation import SpriteAnimation
 from Core.ResourceLoader import ResourceLoader
 from Gameplay.Actors.Entities.Entity import Entity
+from Gameplay.Actors.ProjectileActor import ProjectileActor
+from Gameplay.Actors.PhysicsLayers import PhysicsLayers
 
 
 class GhostEntity(Entity):
     MOVEMENT_SPEED = 0.005
     WALK_ANIMATION_SPEED = 4
+    PROJECTILE_ANIMATION_SPEED = 10
+    DEATH_EXPLOSION_ANIMATION_SPEED = 2
     DEATH_PARTICLE_TIME = 300
     WALK_SPEED = 0.005
     MIN_DISTANCE_TO_CHANGE_TARGET = 0.1
@@ -18,11 +22,18 @@ class GhostEntity(Entity):
     DESIRED_POSITION_MIN_Y = 0.6
     DESIRED_POSITION_MAX_Y = 7.24
 
+    SHOOTING_COOLDOWN_MIN = 500
+    SHOOTING_COOLDOWN_MAX = 2000
+
     def __init__(self, position, rotation, scale, player):
+        super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER)
         self._player = player
         self._desired_position = None
         self._min_squared_magnitude_to_change_target = GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET * GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET
-        super().__init__(position, rotation, scale)
+        self._projectile_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/BlueProjectile"), GhostEntity.PROJECTILE_ANIMATION_SPEED)
+        self._death_particle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/Particles/1"), GhostEntity.DEATH_EXPLOSION_ANIMATION_SPEED)
+        self._chose_cooldown = GhostEntity.get_random_cooldown()
+        self._current_cooldown = 0
 
     def initialize_movement_animations(self):
         self._idle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Ghost/Animations/Idle"), GhostEntity.WALK_ANIMATION_SPEED)
@@ -33,6 +44,7 @@ class GhostEntity(Entity):
 
     def on_update(self, delta_time, scene):
         self.update_movement(delta_time)
+        self.shoot_projectile_at_player(delta_time)
         super().on_update(delta_time, scene)
 
     def update_movement(self, delta_time):
@@ -54,6 +66,25 @@ class GhostEntity(Entity):
             self._desired_position = None
 
         return normalized_direction
+
+    def shoot_projectile_at_player(self, delta_time):
+        if self._current_cooldown < self._chose_cooldown:
+            self._current_cooldown += delta_time
+            return
+
+        self._current_cooldown = 0
+        self._chose_cooldown = GhostEntity.get_random_cooldown()
+
+        to_player_direction = Vector2.normalize(self._player.get_position() - self._position)
+        projectile_actor = ProjectileActor(self._position, 0, Vector2(0.3, 0.3),
+                                           to_player_direction, self, self._scene,
+                                           self._projectile_animation, PhysicsLayers.PLAYER_LAYER)
+        self._scene.add_actor(projectile_actor)
+
     def create_death_particle(self, scene):
-        particle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/Particles/1"), 2)
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), scene, particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
+        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
+                                      scene, self._death_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
+
+    @staticmethod
+    def get_random_cooldown():
+        return random.uniform(GhostEntity.SHOOTING_COOLDOWN_MIN, GhostEntity.SHOOTING_COOLDOWN_MAX)

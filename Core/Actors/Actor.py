@@ -2,7 +2,7 @@ from Core.Actors.ActorRenderer import ActorRenderer
 
 
 class Actor:
-    def __init__(self, position, rotation, scale, sprite, y_render_order=False, collision_layer = 0):
+    def __init__(self, position, rotation, scale, sprite, y_render_order=False, collision_layer=0):
         self._position = position
         self._rotation = rotation
         self._scale = scale
@@ -11,6 +11,7 @@ class Actor:
         self._y_render_order = y_render_order
         self.on_start()
         self._collision_layer = collision_layer
+        self._collided_actors = []
 
     def get_collision_layer(self):
         return self._collision_layer
@@ -48,10 +49,14 @@ class Actor:
     def on_destroy(self):
         pass
 
-    def on_collision(self, actor):
+    def on_collision_enter(self, actor):
+        pass
+
+    def on_collision_exit(self, actor):
         pass
 
     def look_for_collision(self, scene):
+        _current_collisions = []
         for actor in scene.get_actors():
             if actor is self:
                 continue
@@ -63,7 +68,17 @@ class Actor:
                 self._position.x + self._scale.x > actor_position.x and\
                 self._position.y < actor_position.y + actor_scale.y and\
                 self._position.y + self._scale.y > actor_position.y:
-                actor.on_collision(self)
+                _current_collisions.append(actor)
+
+        for collided_actor in self._collided_actors:
+            if collided_actor not in _current_collisions:
+                collided_actor.on_collision_exit(self)
+
+        for collided_actor in _current_collisions:
+            if collided_actor not in self._collided_actors:
+                collided_actor.on_collision_enter(self)
+
+        self._collided_actors = _current_collisions
 
     def move(self, delta):
         self._position += delta

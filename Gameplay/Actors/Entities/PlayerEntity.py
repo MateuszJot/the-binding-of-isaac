@@ -4,6 +4,8 @@ from Core.ResourceLoader import ResourceLoader
 from Core.Input import Input
 from Gameplay.Actors.Entities.Entity import Entity
 from Gameplay.Actors.ProjectileActor import ProjectileActor
+from Gameplay.Actors.PhysicsLayers import PhysicsLayers
+
 
 class PlayerEntity(Entity):
     WALK_ANIMATION_SPEED = 2
@@ -12,7 +14,7 @@ class PlayerEntity(Entity):
     SHOOTING_COOLDOWN = 2
 
     def __init__(self, position, rotation, scale):
-        super().__init__(position, rotation, scale, 1)
+        super().__init__(position, rotation, scale, PhysicsLayers.PLAYER_LAYER)
         Input.events.on_fire += self.fire_projectile
         self._cached_move_direction = Vector2(1, 0)
         self._projectile_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/YellowProjectile"), PlayerEntity.PROJECTILE_ANIMATION_SPEED)
@@ -48,4 +50,3 @@ class PlayerEntity(Entity):
 
         self._shooting_cooldown_time = 0
         self._scene.add_actor(ProjectileActor(self._position, 0, Vector2(0.3, 0.3), self._cached_move_direction, self, self._scene, self._projectile_animation))
-
