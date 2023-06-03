@@ -21,6 +21,9 @@ class Entity(Actor):
 
         super().__init__(position, rotation, scale, None, True, collision_layer)
 
+    def get_center_position(self):
+        return self.get_position() + self.get_scale()/2
+
     def on_update(self, delta_time, scene):
         self._scene = scene
         if self._shadow is None:
@@ -38,7 +41,11 @@ class Entity(Actor):
 
     def get_sprite(self):
         if self._special_animation is not None:
-            return self._special_animation.get_next_sprite()
+            next_frame = self._special_animation.get_next_sprite()
+            if next_frame is not None:
+                return next_frame
+            else:
+                self._special_animation = None
 
         if self._move_direction.x == 0 and self._move_direction.y == 0:
             return self._idle_animation.get_next_sprite()
@@ -71,18 +78,23 @@ class Entity(Actor):
             return
 
         self._health -= 1
-        self.create_death_particle(self._scene)
         if self._health <= 0:
+            self.create_death_particle(self._scene)
             self.on_death()
             self._scene.destroy_actor(self._shadow)
             self._scene.destroy_actor(actor)
             self._scene.destroy_actor(self)
+        else:
+            self.create_damage_particle(self._scene)
 
     def create_shadow(self, scene):
         self._shadow = Actor(Vector2(5, 5), 0, Vector2(2, 2), ResourceLoader.load_sprite_from_path("Misc/shadow.png"))
         scene.add_actor_at_index(self._shadow, 0)
 
     def create_death_particle(self, scene):
+        pass
+
+    def create_damage_particle(self, scene):
         pass
 
     def on_death(self):

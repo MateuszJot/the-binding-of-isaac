@@ -1,4 +1,4 @@
-from Gameplay.Scenes.EndlessScene import EndlessScene
+import Gameplay.Scenes.EndlessScene
 from events import Events
 
 
@@ -21,11 +21,11 @@ class GameManager:
     @staticmethod
     def get_scene():
         if GameManager._scene is None:
-            GameManager._scene = EndlessScene.get_scene(GameManager._level)
+            GameManager._scene = Gameplay.Scenes.EndlessScene.EndlessScene.get_scene(GameManager._level)
 
         return GameManager._scene
 
     @staticmethod
     def to_next_level():
         GameManager._level += 1
-        GameManager._scene = EndlessScene.get_scene(GameManager._level)
+        GameManager._scene = Gameplay.Scenes.EndlessScene.EndlessScene.get_scene(GameManager._level)

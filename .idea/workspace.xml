@@ -5,16 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/DoorsActor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/GameManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/2/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Misc/Particles/3/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/the-binding-of-isaac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/the-binding-of-isaac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/SpriteAnimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/SpriteAnimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/DoorsActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/DoorActor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/DebugScene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/GameManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/GameManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacho/Desktop/the-binding-of-isaac&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jacho/Desktop/the-binding-of-isaac",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\2" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\3" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\1" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\BlueProjectile" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\YellowProjectile" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackRight" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Ghost\Animations\AttackLeft" />
     </key>
   </component>
   <component name="RunManager">
@@ -62,10 +82,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\jacho\OneDrive\Pulpit\the-binding-of-isaac\venv\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Python 3.12 (the-binding-of-isaac)" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gameplay" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Gameplay/Main.py" />
