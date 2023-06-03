@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/PhysicsLayers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/DoorsActor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/GameManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/ProjectileActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/ProjectileActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/MainScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/DebugScene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

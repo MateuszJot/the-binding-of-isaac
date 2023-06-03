@@ -6,6 +6,7 @@ from Core.ResourceLoader import ResourceLoader
 from Gameplay.Actors.Entities.Entity import Entity
 from Gameplay.Actors.ProjectileActor import ProjectileActor
 from Gameplay.Actors.PhysicsLayers import PhysicsLayers
+from Gameplay.GameManager import GameManager
 
 
 class GhostEntity(Entity):
@@ -84,6 +85,9 @@ class GhostEntity(Entity):
     def create_death_particle(self, scene):
         scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
                                       scene, self._death_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
+
+    def on_death(self):
+        GameManager.enemy_dead()
 
     @staticmethod
     def get_random_cooldown():

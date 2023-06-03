@@ -5,7 +5,7 @@ from Core.ResourceLoader import ResourceLoader
 
 
 class Scene:
-    def __init__(self, background_image_path):
+    def __init__(self, background_image_path, level=0):
         self._actors = []
         self._time = 0
         self._background = pygame.transform.scale(ResourceLoader.load_sprite_from_path(background_image_path), (Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT))

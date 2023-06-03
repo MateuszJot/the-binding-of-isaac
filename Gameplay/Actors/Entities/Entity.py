@@ -73,6 +73,7 @@ class Entity(Actor):
         self._health -= 1
         self.create_death_particle(self._scene)
         if self._health <= 0:
+            self.on_death()
             self._scene.destroy_actor(self._shadow)
             self._scene.destroy_actor(actor)
             self._scene.destroy_actor(self)
@@ -82,4 +83,7 @@ class Entity(Actor):
         scene.add_actor_at_index(self._shadow, 0)
 
     def create_death_particle(self, scene):
+        pass
+
+    def on_death(self):
         pass
