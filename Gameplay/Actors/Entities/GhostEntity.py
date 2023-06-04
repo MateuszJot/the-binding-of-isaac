@@ -26,7 +26,7 @@ class GhostEntity(Entity):
     SHOOTING_COOLDOWN_MAX = 2000
 
     def __init__(self, position, rotation, scale, player):
-        super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER)
+        super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER, 1)
         self._player = player
         self._desired_position = None
         self._min_squared_magnitude_to_change_target = GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET * GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET
