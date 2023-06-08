@@ -29,3 +29,7 @@ class GameManager:
     def to_next_level():
         GameManager._level += 1
         GameManager._scene = Gameplay.Scenes.EndlessScene.EndlessScene.get_scene(GameManager._level)
+
+    @staticmethod
+    def set_scene(scene):
+        _scene = scene

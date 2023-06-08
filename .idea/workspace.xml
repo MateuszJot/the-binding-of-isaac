@@ -5,8 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/MonsterEntity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackLeft/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/AttackRight/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/Idle/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkLeft/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Monster/Animations/WalkRight/9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/GameManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/GameManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +116,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\2" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\3" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\Particles\1" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\BlueProjectile" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Misc\YellowProjectile" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\Idle" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\WalkRight" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\WalkLeft" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\AttackRight" />
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\AttackLeft" />
     </key>
   </component>
   <component name="RunManager">

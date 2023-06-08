@@ -11,6 +11,8 @@ class Scene:
         self._background = pygame.transform.scale(ResourceLoader.load_sprite_from_path(background_image_path), (Settings.SCREEN_WIDTH, Settings.SCREEN_HEIGHT))
 
     def destroy_actor(self, actor):
+        if actor not in self._actors:
+            return
         self._actors.remove(actor)
         del actor
 

@@ -77,12 +77,14 @@ class Entity(Actor):
         if actor.get_collision_layer() != self._collision_layer:
             return
 
-        self._health -= 1
+        self.apply_damage()
+
+    def apply_damage(self, damage=1):
+        self._health -= damage
         if self._health <= 0:
             self.create_death_particle(self._scene)
             self.on_death()
             self._scene.destroy_actor(self._shadow)
-            self._scene.destroy_actor(actor)
             self._scene.destroy_actor(self)
         else:
             self.create_damage_particle(self._scene)

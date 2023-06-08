@@ -4,6 +4,7 @@ import Gameplay.GameManager
 from pygame.math import Vector2
 from Gameplay.Actors.Entities.PlayerEntity import PlayerEntity
 from Gameplay.Actors.Entities.GhostEntity import GhostEntity
+from Gameplay.Actors.Entities.MonsterEntity import MonsterEntity
 from Gameplay.Actors.DoorActor import DoorActor
 from Core.Scene import Scene
 
@@ -19,16 +20,28 @@ class EndlessScene(Scene):
         EndlessScene.add_doors_to_scene(scene)
 
         ghost_amount = EndlessScene.get_ghost_entity_amount_over_level(level)
-        Gameplay.GameManager.GameManager.set_enemies_alive(ghost_amount)
+        monster_amount = EndlessScene.get_monster_entity_amount_over_level(level)
+        Gameplay.GameManager.GameManager.set_enemies_alive(ghost_amount + monster_amount)
         for i in range(0, ghost_amount):
             position = Vector2(random.uniform(1, 5), random.uniform(2, 5))
             scene.add_actor(GhostEntity(position, 0, Vector2(2, 2), player))
+
+        for i in range(0, monster_amount):
+            position = Vector2(random.uniform(1, 5), random.uniform(2, 5))
+            scene.add_actor(MonsterEntity(position, 0, Vector2(2, 2), player))
 
         return scene
 
     @staticmethod
     def get_ghost_entity_amount_over_level(level):
         return int(level / 2) + 1
+
+    @staticmethod
+    def get_monster_entity_amount_over_level(level):
+        base = level - 1
+        if base < 0:
+            base = 0
+        return int(base / 2)
 
     @staticmethod
     def add_doors_to_scene(scene):

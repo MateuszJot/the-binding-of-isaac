@@ -8,13 +8,13 @@ from Gameplay.Actors.Entities.Entity import Entity
 from Gameplay.Actors.ProjectileActor import ProjectileActor
 from Gameplay.Actors.PhysicsLayers import PhysicsLayers
 
+
 class GhostEntity(Entity):
     MOVEMENT_SPEED = 0.005
     WALK_ANIMATION_SPEED = 4
     PROJECTILE_ANIMATION_SPEED = 10
     DEATH_EXPLOSION_ANIMATION_SPEED = 2
     DEATH_PARTICLE_TIME = 300
-    WALK_SPEED = 0.005
     MIN_DISTANCE_TO_CHANGE_TARGET = 0.1
 
     DESIRED_POSITION_MIN_X = 1.4
@@ -24,7 +24,7 @@ class GhostEntity(Entity):
 
     SHOOTING_COOLDOWN_MIN = 500
     SHOOTING_COOLDOWN_MAX = 2000
-    LIVES_AMOUNT = 5
+    LIVES_AMOUNT = 2
 
     def __init__(self, position, rotation, scale, player):
         super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER, GhostEntity.LIVES_AMOUNT)
