@@ -2,7 +2,7 @@ from Core.Actors.ActorRenderer import ActorRenderer
 
 
 class Actor:
-    def __init__(self, position, rotation, scale, sprite, y_render_order=False, collision_layer=0):
+    def __init__(self, position, rotation, scale, sprite, scene, y_render_order=False, collision_layer=0):
         self._position = position
         self._rotation = rotation
         self._scale = scale
@@ -12,6 +12,7 @@ class Actor:
         self.on_start()
         self._collision_layer = collision_layer
         self._collided_actors = []
+        self._scene = scene
 
     def get_collision_layer(self):
         return self._collision_layer
@@ -43,7 +44,7 @@ class Actor:
     def on_start(self):
         pass
 
-    def on_update(self, delta_time, scene):
+    def on_update(self, delta_time):
         pass
 
     def on_destroy(self):
@@ -55,9 +56,9 @@ class Actor:
     def on_collision_exit(self, actor):
         pass
 
-    def look_for_collision(self, scene):
+    def look_for_collision(self):
         _current_collisions = []
-        for actor in scene.get_actors():
+        for actor in self._scene.get_actors():
             if actor is self:
                 continue
 

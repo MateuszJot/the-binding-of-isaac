@@ -26,8 +26,8 @@ class GhostEntity(Entity):
     SHOOTING_COOLDOWN_MAX = 2000
     LIVES_AMOUNT = 2
 
-    def __init__(self, position, rotation, scale, player):
-        super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER, GhostEntity.LIVES_AMOUNT)
+    def __init__(self, position, rotation, scale, player, scene):
+        super().__init__(position, rotation, scale, scene, PhysicsLayers.MOBS_LAYER, GhostEntity.LIVES_AMOUNT)
         self._player = player
         self._desired_position = None
         self._min_squared_magnitude_to_change_target = GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET * GhostEntity.MIN_DISTANCE_TO_CHANGE_TARGET
@@ -49,10 +49,10 @@ class GhostEntity(Entity):
         self._walk_up_animation = self._walk_left_animation
         self._walk_down_animation = self._walk_left_animation
 
-    def on_update(self, delta_time, scene):
+    def on_update(self, delta_time):
         self.update_movement(delta_time)
         self.shoot_projectile_at_player(delta_time)
-        super().on_update(delta_time, scene)
+        super().on_update(delta_time)
 
     def update_movement(self, delta_time):
         direction = self.get_desired_movement_direction()
@@ -92,13 +92,13 @@ class GhostEntity(Entity):
         else:
             self._special_animation = self._attack_right
 
-    def create_death_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._death_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
+    def create_death_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._death_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
 
-    def create_damage_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._damage_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
+    def create_damage_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._damage_particle_animation, GhostEntity.DEATH_PARTICLE_TIME))
 
     def on_death(self):
         Gameplay.GameManager.GameManager.enemy_dead()

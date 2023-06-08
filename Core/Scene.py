@@ -1,6 +1,7 @@
 import pygame
 import pygame.math
 import Core.Settings as Settings
+import Gameplay.GameManager
 from Core.ResourceLoader import ResourceLoader
 
 
@@ -42,4 +43,4 @@ class Scene:
 
     def update(self, delta_time):
         for actor in self._actors:
-            actor.on_update(delta_time, self)
+            actor.on_update(delta_time)

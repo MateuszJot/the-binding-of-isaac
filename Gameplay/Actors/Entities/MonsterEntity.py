@@ -22,8 +22,8 @@ class MonsterEntity(Entity):
 
     LIVES_AMOUNT = 2
 
-    def __init__(self, position, rotation, scale, player):
-        super().__init__(position, rotation, scale, PhysicsLayers.MOBS_LAYER, MonsterEntity.LIVES_AMOUNT)
+    def __init__(self, position, rotation, scale, player, scene):
+        super().__init__(position, rotation, scale, scene, PhysicsLayers.MOBS_LAYER, MonsterEntity.LIVES_AMOUNT)
         self._player = player
         self._damage_particle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/Particles/2"), MonsterEntity.DEATH_EXPLOSION_ANIMATION_SPEED)
         self._death_particle_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/Particles/1"), MonsterEntity.DEATH_EXPLOSION_ANIMATION_SPEED)
@@ -41,11 +41,11 @@ class MonsterEntity(Entity):
         self._walk_up_animation = self._walk_left_animation
         self._walk_down_animation = self._walk_left_animation
 
-    def on_update(self, delta_time, scene):
+    def on_update(self, delta_time):
         self.update_movement(delta_time)
         self.update_cooldown(delta_time)
         self.try_attack_player()
-        super().on_update(delta_time, scene)
+        super().on_update(delta_time)
 
     def update_cooldown(self, delta_time):
         if self._current_cooldown > 0:
@@ -76,13 +76,13 @@ class MonsterEntity(Entity):
             self._special_animation = self._attack_right
         self._player.apply_damage(MonsterEntity.ATTACK_DAMAGE)
 
-    def create_death_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._death_particle_animation, MonsterEntity.DEATH_PARTICLE_TIME))
+    def create_death_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._death_particle_animation, MonsterEntity.DEATH_PARTICLE_TIME))
 
-    def create_damage_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._damage_particle_animation, MonsterEntity.DEATH_PARTICLE_TIME))
+    def create_damage_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._damage_particle_animation, MonsterEntity.DEATH_PARTICLE_TIME))
 
     def on_death(self):
         Gameplay.GameManager.GameManager.enemy_dead()

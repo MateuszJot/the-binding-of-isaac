@@ -12,10 +12,13 @@ class ActorRenderer:
         if sprite is None:
             return
 
-        position_in_pixels = (self._actor.get_position() - SceneCamera.get_offset()) * Settings.ONE_METER
-        scale_in_pixels = self._actor.get_scale() * Settings.ONE_METER
-
-        sprite = pygame.transform.scale(sprite, scale_in_pixels)
+        sprite = pygame.transform.scale(sprite, self.get_scale_in_pixels())
         sprite = pygame.transform.rotate(sprite, self._actor.get_rotation())
 
-        window.blit(sprite, position_in_pixels)
+        window.blit(sprite, self.get_position_in_pixels())
+
+    def get_position_in_pixels(self):
+        return (self._actor.get_position() - SceneCamera.get_offset()) * Settings.ONE_METER
+
+    def get_scale_in_pixels(self):
+        return self._actor.get_scale() * Settings.ONE_METER

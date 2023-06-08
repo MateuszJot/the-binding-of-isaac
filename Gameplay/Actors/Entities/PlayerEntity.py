@@ -10,6 +10,8 @@ from Gameplay.Actors.PhysicsLayers import PhysicsLayers
 from Gameplay.Actors.ParticleActor import ParticleActor
 from Gameplay.Actors.DoorActor import DoorActor
 
+import Gameplay.GameManager
+
 
 class PlayerEntity(Entity):
     WALK_ANIMATION_SPEED = 2
@@ -19,8 +21,8 @@ class PlayerEntity(Entity):
     DEATH_EXPLOSION_ANIMATION_SPEED = 2
     DEATH_PARTICLE_TIME = 300
 
-    def __init__(self, position, rotation, scale):
-        super().__init__(position, rotation, scale, PhysicsLayers.PLAYER_LAYER)
+    def __init__(self, position, rotation, scale, scene):
+        super().__init__(position, rotation, scale, scene, PhysicsLayers.PLAYER_LAYER)
         Input.events.on_fire += self.fire_projectile
         self._cached_move_direction = Vector2(1, 0)
         self._projectile_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Misc/YellowProjectile"), PlayerEntity.PROJECTILE_ANIMATION_SPEED)
@@ -35,10 +37,10 @@ class PlayerEntity(Entity):
         self._walk_left_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Player/Animations/WalkLeft"), PlayerEntity.WALK_ANIMATION_SPEED)
         self._walk_right_animation = SpriteAnimation(ResourceLoader.load_sprites_from_folder("Player/Animations/WalkRight"), PlayerEntity.WALK_ANIMATION_SPEED)
 
-    def on_update(self, delta_time, scene):
+    def on_update(self, delta_time):
         self.update_movement(delta_time)
         self.fire_cooldown(delta_time)
-        super().on_update(delta_time, scene)
+        super().on_update(delta_time)
 
     def fire_cooldown(self, delta_time):
         if self._shooting_cooldown_time < PlayerEntity.SHOOTING_COOLDOWN:
@@ -52,13 +54,13 @@ class PlayerEntity(Entity):
         if self._move_direction.x != 0 or self._move_direction.y != 0:
             self._cached_move_direction = Vector2(self._move_direction.x, self._move_direction.y)
 
-    def create_death_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._death_particle_animation, PlayerEntity.DEATH_PARTICLE_TIME))
+    def create_death_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._death_particle_animation, PlayerEntity.DEATH_PARTICLE_TIME))
 
-    def create_damage_particle(self, scene):
-        scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3),
-                                      scene, self._damage_particle_animation, PlayerEntity.DEATH_PARTICLE_TIME))
+    def create_damage_particle(self):
+        self._scene.add_actor(ParticleActor(self._position - Vector2(0.25, 1), 0, Vector2(3, 3), self._scene,
+                                            self._damage_particle_animation, PlayerEntity.DEATH_PARTICLE_TIME))
 
     def fire_projectile(self):
         if self._shooting_cooldown_time < PlayerEntity.SHOOTING_COOLDOWN:
@@ -72,3 +74,6 @@ class PlayerEntity(Entity):
             Gameplay.GameManager.GameManager.to_next_level()
         else:
             super().on_collision_enter(actor)
+
+    def on_death(self):
+        Gameplay.GameManager.GameManager.to_main_menu()

@@ -11,7 +11,7 @@ class Entity(Actor):
     POSITION_MAX_Y = 7.24
     SHADOW_OFFSET = Vector2(0, 0.8)
 
-    def __init__(self, position, rotation, scale, collision_layer=0, base_health=10):
+    def __init__(self, position, rotation, scale, scene, collision_layer=0, base_health=10):
         self.initialize_movement_animations()
         self._move_direction = Vector2(0, 0)
         self._shadow = None
@@ -19,15 +19,14 @@ class Entity(Actor):
         self._collision_layer = collision_layer
         self._health = base_health
 
-        super().__init__(position, rotation, scale, None, True, collision_layer)
+        super().__init__(position, rotation, scale, None, scene, True, collision_layer)
 
     def get_center_position(self):
         return self.get_position() + self.get_scale()/2
 
-    def on_update(self, delta_time, scene):
-        self._scene = scene
+    def on_update(self, delta_time):
         if self._shadow is None:
-            self.create_shadow(scene)
+            self.create_shadow()
 
         self._shadow.set_position(self._position + Entity.SHADOW_OFFSET)
 
@@ -82,21 +81,21 @@ class Entity(Actor):
     def apply_damage(self, damage=1):
         self._health -= damage
         if self._health <= 0:
-            self.create_death_particle(self._scene)
+            self.create_death_particle()
             self.on_death()
             self._scene.destroy_actor(self._shadow)
             self._scene.destroy_actor(self)
         else:
-            self.create_damage_particle(self._scene)
+            self.create_damage_particle()
 
-    def create_shadow(self, scene):
-        self._shadow = Actor(Vector2(5, 5), 0, Vector2(2, 2), ResourceLoader.load_sprite_from_path("Misc/shadow.png"))
-        scene.add_actor_at_index(self._shadow, 0)
+    def create_shadow(self):
+        self._shadow = Actor(Vector2(5, 5), 0, Vector2(2, 2), ResourceLoader.load_sprite_from_path("Misc/shadow.png"), self._scene)
+        self._scene.add_actor_at_index(self._shadow, 0)
 
-    def create_death_particle(self, scene):
+    def create_death_particle(self):
         pass
 
-    def create_damage_particle(self, scene):
+    def create_damage_particle(self):
         pass
 
     def on_death(self):

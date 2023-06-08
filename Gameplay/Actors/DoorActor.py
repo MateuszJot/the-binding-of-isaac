@@ -6,14 +6,14 @@ from Gameplay.Actors.PhysicsLayers import PhysicsLayers
 
 
 class DoorActor(Actor):
-    def __init__(self, position, scale):
+    def __init__(self, position, scale, scene):
         self._doors_enabled = False
-        super().__init__(Vector2(position.x, position.y), 0, scale, None, False, PhysicsLayers.PLAYER_LAYER)
+        super().__init__(Vector2(position.x, position.y), 0, scale, None, scene, False, PhysicsLayers.PLAYER_LAYER)
         Gameplay.GameManager.GameManager.events.on_all_enemies_dead += self.enable_doors
 
-    def on_update(self, delta_time, scene):
+    def on_update(self, delta_time):
         if self._doors_enabled:
-            self.look_for_collision(scene)
+            self.look_for_collision()
 
     def get_sprite(self):
         return None
