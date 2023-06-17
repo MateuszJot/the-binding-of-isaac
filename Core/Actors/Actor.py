@@ -9,10 +9,10 @@ class Actor:
         self._renderer = ActorRenderer(self)
         self._sprite = sprite
         self._y_render_order = y_render_order
-        self.on_start()
         self._collision_layer = collision_layer
         self._collided_actors = []
         self._scene = scene
+        self.on_start()
 
     def get_collision_layer(self):
         return self._collision_layer
