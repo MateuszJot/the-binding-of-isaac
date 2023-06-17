@@ -7,6 +7,7 @@ from Core.Debug import Debug
 class ResourceLoader:
     RESOURCES_DIRECTORY_PATH = "Resources/"
     CACHED_SPRITES = {}
+    CACHED_SOUNDS = {}
 
     @staticmethod
     def load_sprites_from_folder(local_path):
@@ -38,3 +39,14 @@ class ResourceLoader:
         Debug.log(f"Loaded sprite from: {local_path}")
         ResourceLoader.CACHED_SPRITES[directory] = pygame.image.load(directory)
         return ResourceLoader.CACHED_SPRITES[directory]
+
+    @staticmethod
+    def load_sound_from_path(local_path):
+        directory = f"{os.getcwd()}/../{ResourceLoader.RESOURCES_DIRECTORY_PATH}{local_path}"
+        if directory in ResourceLoader.CACHED_SOUNDS:
+            Debug.log(f"Used cached sound from: {local_path}")
+            return ResourceLoader.CACHED_SOUNDS[directory]
+
+        Debug.log(f"Loaded sprite from: {local_path}")
+        ResourceLoader.CACHED_SOUNDS[directory] = pygame.mixer.Sound(directory)
+        return ResourceLoader.CACHED_SOUNDS[directory]

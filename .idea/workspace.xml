@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290ee711-f0f8-4110-857c-eb7d5357ff6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/UI/UIButton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Actors/UI/UIImage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Scenes/CreditsScene.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gameplay/Scenes/MenuScene.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/credits_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/credits_hovered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/exit_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/exit_hovered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/play_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/play_hovered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/to_menu_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/Buttons/to_menu_hovered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/credits.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Resources/UI/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Sounds/damage.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Sounds/music.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Actors/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/Actor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Actors/ActorRenderer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Scene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Scene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/DoorActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/DoorActor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/Entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/GhostEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/MonsterEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/MonsterEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/Entities/PlayerEntity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/ParticleActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/ParticleActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Actors/ProjectileActor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Actors/ProjectileActor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/GameManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/GameManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/DebugScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/DebugScene.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Scenes/EndlessScene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gameplay/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gameplay/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +43,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Sounds" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\UI" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\UI\Buttons" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\Idle" />
       <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\WalkRight" />
-      <recent name="C:\Users\jacho\Desktop\the-binding-of-isaac\Resources\Monster\Animations\WalkLeft" />
     </key>
   </component>
   <component name="RunManager">

@@ -1,3 +1,4 @@
+import pygame.mixer
 from pygame.math import Vector2
 from Core.Actors.Actor import Actor
 from Core.Debug import Debug
@@ -18,6 +19,7 @@ class Entity(Actor):
         self._special_animation = None
         self._collision_layer = collision_layer
         self._health = base_health
+        self._damage_sound = ResourceLoader.load_sound_from_path("Sounds/damage.wav")
 
         super().__init__(position, rotation, scale, None, scene, True, collision_layer)
 
@@ -79,6 +81,7 @@ class Entity(Actor):
         self.apply_damage()
 
     def apply_damage(self, damage=1):
+        pygame.mixer.Sound.play(self._damage_sound)
         self._health -= damage
         if self._health <= 0:
             self.create_death_particle()
