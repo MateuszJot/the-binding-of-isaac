@@ -1,10 +1,7 @@
 # The Binding Of Isaac's clone
 An university assignment
 
-![image](https://github.com/MateuszJot/the-binding-of-isaac/assets/67312038/c84c32b5-5128-4e8a-833c-49feac947eb8)
-![image](https://github.com/MateuszJot/the-binding-of-isaac/assets/67312038/0bfa44d3-8d45-4c0e-a771-9895426ed587)
-
-
+[![GO TO VIDEO](https://img.youtube.com/vi/siZgLS8Dax4/0.jpg)](https://www.youtube.com/watch?v=siZgLS8Dax4)
 
 # Features
 Game engine with camera/scenes/actors/ui/resources management
